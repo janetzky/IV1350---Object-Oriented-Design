@@ -5,3 +5,5 @@ Seminar 3 in the KTH course Object-Oriented Design, IV1350
 Both source code and test included.
 
 The basic and alternative flow can be "played" at main in the source code.
+
+Seminar 4 update made 2021-05-19, implemented exceptions handling and different patterns.
