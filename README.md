@@ -7,3 +7,4 @@ Both source code and test included.
 The basic and alternative flow can be "played" at main in the source code.
 
 Seminar 4 update made 2021-05-19, implemented exceptions handling and different patterns.
+Either hardcoded saleExample or saleManual can be choosen in view. 
