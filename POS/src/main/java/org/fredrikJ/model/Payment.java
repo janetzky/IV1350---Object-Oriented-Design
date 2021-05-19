@@ -67,6 +67,9 @@ public class Payment {
         return dateFormat.format(date);
     }
 
+    /**
+     * Calculates the change and updates the variable this.change
+     */
     private void calculateChange() {
         this.change = this.amountPaid - this.amountToPay;
     }

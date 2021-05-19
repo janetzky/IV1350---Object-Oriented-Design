@@ -13,7 +13,8 @@ public class Printer {
     }
 
     /**
-     *  Prints specified receipt
+     * Prints specified receipt
+     *
      * @param receipt to be printed
      */
     public void printReceipt(Receipt receipt) {

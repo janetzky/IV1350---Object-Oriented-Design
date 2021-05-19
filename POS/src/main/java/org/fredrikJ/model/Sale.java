@@ -1,11 +1,13 @@
 package org.fredrikJ.model;
 
+import org.fredrikJ.integration.InventoryCatalog;
+
 /**
  * Represents an sale.
  */
 public class Sale {
 
-    private InventoryCatalog inventoryCatalog = new InventoryCatalog();
+    private final InventoryCatalog inventoryCatalog = new InventoryCatalog();
     private ItemList itemList = new ItemList();
 
     /**
@@ -19,8 +21,9 @@ public class Sale {
      *
      * @param itemId   specific item identifier.
      * @param quantity quantity of specific item.
+     * @return return if the item is in the list of not.
      */
-    public boolean enterItem(String itemId, int quantity) {
+    public boolean enterItem(String itemId, int quantity) throws InvalidItemIdException, DatabaseFailureException {
         boolean isItemInList = itemList.isItemTypeInList(itemId);
         if (isItemInList)
             itemList.addItemByQuantity(itemId, quantity);
@@ -28,16 +31,6 @@ public class Sale {
             itemList.addItemType(inventoryCatalog.getItemById(itemId, quantity));
         }
         return isItemInList;
-    }
-
-    /**
-     * Get the current total for sale
-     */
-    public double getRunningTotal() {
-        return itemList.getPrice().getPrice();
-    }
-    public String getScannedItems() {
-        return itemList.getScannedItems();
     }
 
     /**
@@ -50,10 +43,22 @@ public class Sale {
     }
 
     /**
-     * Omitted in seminar 3.
+     * Get methods
      */
-    public void addDiscount(double discount) {
+    public ItemList getItemList() {
+        return itemList;
+    }
 
+    public ItemType getItemById(String itemId) {
+        return itemList.getItemTypeById(itemId);
+    }
+
+    public double getRunningTotal() {
+        return itemList.getPrice().getPrice();
+    }
+
+    public String getScannedItems() {
+        return itemList.getScannedItems();
     }
 
 }

@@ -12,7 +12,7 @@ public class ReceiptTest {
     private Printer printer;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         printer = new Printer();
         items = new ItemList();
         items.addItemType(new ItemType("Kidu773", 80, 25, "Gröna oliver", 4));
@@ -22,7 +22,7 @@ public class ReceiptTest {
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
         items = null;
     }
 

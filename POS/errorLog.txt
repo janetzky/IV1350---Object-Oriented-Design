@@ -1,0 +1,20 @@
+maj 19, 2021 7:45:43 EM org.fredrikJ.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 7:45:43 EM org.fredrikJ.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 7:46:00 EM org.fredrikJ.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 7:46:00 EM org.fredrikJ.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 8:15:20 EM org.fredrikJ.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 8:15:20 EM org.fredrikJ.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 8:17:04 EM org.fredrikJ.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 8:17:04 EM org.fredrikJ.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 8:17:18 EM org.fredrikJ.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 8:17:19 EM org.fredrikJ.integration.ErrorLog logWarning
+WARNING: Database connection failure.

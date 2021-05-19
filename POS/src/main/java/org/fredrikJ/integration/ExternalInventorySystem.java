@@ -14,6 +14,7 @@ public class ExternalInventorySystem {
 
     /**
      * Registers a new sale to the external inventory system
+     *
      * @param sale will be saved by system.
      */
     public void registerSale(Sale sale) {

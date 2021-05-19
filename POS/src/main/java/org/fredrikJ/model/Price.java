@@ -72,46 +72,51 @@ public class Price {
     }
 
     /**
-     * Returns an price object
+     * Sets the discount by percentage.
      */
+    public void setDiscountByPercentage(double discount) {
+        this.discountPercentage = discount;
+        calculateDiscount();
+    }
+
+    /**
+     * Get methods
+     */
+    public double getDiscountPercentage() {
+        return this.discountPercentage;
+    }
+
     public double getPrice() {
         return this.price;
     }
 
-    /**
-     * Returns netto in sek.
-     */
+    public double getPricePreDiscount() {
+        return this.pricePreDiscount;
+    }
+
+    public double getDiscountAmount() {
+        return this.pricePreDiscount - this.price;
+    }
+
     public double getNetto() {
         return this.netto;
     }
 
-    /**
-     * Returns vat in Percentage.
-     */
     public double getVatPercentage() {
         return this.vatPercentage;
     }
 
-    /**
-     * returns vat in sek.
-     */
     public double getVat() {
         return this.vat;
     }
 
-    /**
-     * Alternative flow not omitted in seminar 3.
-     */
-    public void setDiscount(int discount) {
-    }
 
     /**
-     * Not used yet. Values passes through
+     * Calculates the discount based on discount percentage and price pre discount.
      */
     private void calculateDiscount() {
-        this.price = pricePreDiscount;
-        this.vat = vatPreDiscount;
-        this.netto = nettoPreDiscount;
+        this.price = pricePreDiscount * (100 - discountPercentage) / 100;
+        this.vat = vatPreDiscount * (100 - discountPercentage) / 100;
+        this.netto = nettoPreDiscount * (100 - discountPercentage) / 100;
     }
-
 }

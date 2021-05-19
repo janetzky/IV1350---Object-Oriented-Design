@@ -9,12 +9,12 @@ public class RegisterTest {
     private Register register;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         register = new Register();
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
         register = null;
     }
 

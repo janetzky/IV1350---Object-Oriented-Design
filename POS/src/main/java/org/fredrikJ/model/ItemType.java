@@ -5,9 +5,9 @@ package org.fredrikJ.model;
  */
 public class ItemType {
 
-    private final Price price;
     private final String itemId;
     private final String description;
+    private Price price;
     private Price totalPrice;
     private int quantity;
 
@@ -21,6 +21,7 @@ public class ItemType {
      * @param quantity      quantity of items.
      */
     public ItemType(String itemId, double netto, double vatPercentage, String description, int quantity) {
+        this.totalPrice = new Price(netto, vatPercentage);
         this.price = new Price(netto, vatPercentage);
         this.itemId = itemId;
         this.description = description;
@@ -34,10 +35,12 @@ public class ItemType {
      * @param ItemTypeToCopy an object of Itemtype.
      */
     public ItemType(ItemType ItemTypeToCopy) {
+
         this.price = new Price(ItemTypeToCopy.price.getNetto(), ItemTypeToCopy.price.getVatPercentage());
         this.itemId = ItemTypeToCopy.itemId;
         this.description = ItemTypeToCopy.description;
         this.quantity = ItemTypeToCopy.quantity;
+        this.totalPrice = new Price();
         calculateTotal();
     }
 
@@ -46,17 +49,13 @@ public class ItemType {
      *
      * @param quantity to add or subtract
      */
-    public void addAndSubbToQuantity(int quantity) {
-        if (this.quantity + quantity >= 0)
+    public boolean addAndSubToQuantity(int quantity) {
+        if (this.quantity + quantity > 0)
             this.quantity += quantity;
+        else
+            return false;
         calculateTotal();
-    }
-
-    /**
-     * Calculates the vat-amount in cash not in percentage.
-     */
-    private void calculateTotal() {
-        this.totalPrice = new Price(this.price.getNetto() * this.quantity, this.price.getVatPercentage());
+        return true;
     }
 
     /**
@@ -67,19 +66,19 @@ public class ItemType {
     }
 
     public Price getPrice() {
-        return new Price(this.price);
+        return this.price;
     }
 
-    public Price getTotalPrice() {
-        calculateTotal();
-        return new Price(this.totalPrice);
-    }
+    public Price getTotalPrice() { calculateTotal(); return this.totalPrice; }
 
-    public String getDescription() {
-        return this.description;
-    }
+    public String getDescription() { return this.description; }
 
-    public int getQuantity() {
-        return this.quantity;
+    public int getQuantity() { return this.quantity;}
+
+    /**
+     * Calculates the vat-amount in cash not in percentage.
+     */
+    private void calculateTotal() {
+        this.totalPrice.setNettoAndVatPercentage(this.price.getNetto() * this.quantity, this.price.getVatPercentage());
     }
 }

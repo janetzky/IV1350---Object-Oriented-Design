@@ -12,7 +12,7 @@ public class ExternalAccountingSystemTest {
     private ItemList items;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         externalAccountingSystem = new ExternalAccountingSystem();
         payment = new Payment(500.72, 700);
 
@@ -25,7 +25,7 @@ public class ExternalAccountingSystemTest {
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
         externalAccountingSystem = null;
         payment = null;
         items = null;

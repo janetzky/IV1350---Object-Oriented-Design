@@ -10,7 +10,7 @@ public class ItemListTest {
     private ItemList itemList;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         this.itemList = new ItemList();
         ItemType item = new ItemType("331dfsef", 13.37, 12, "Delikat kladdkaka", 42);
         this.itemList.addItemType(item);

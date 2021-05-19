@@ -2,11 +2,10 @@ package org.fredrikJ.startup;
 
 import org.fredrikJ.controller.Controller;
 import org.fredrikJ.integration.*;
-import org.fredrikJ.model.InventoryCatalog;
 import org.fredrikJ.view.View;
 
 /**
- * class representing main and start up off all the systems
+ * The main method that makes the constructor and creates the view.
  */
 public class Main {
 
@@ -24,13 +23,15 @@ public class Main {
 
         DiscountCatalog discountCatalog = new DiscountCatalog();
 
+        CustomerCatalog customerCatalog = new CustomerCatalog();
+
 
         System.out.println("Program Startup");
 
         Controller controller = new Controller(register, externalAccountingSystem, externalInventorySystem,
-                printer, inventoryCatalog, discountCatalog);
-        View view = new View(controller);
+                printer, inventoryCatalog, discountCatalog, customerCatalog);
 
+        View view = new View(controller);
         view.view();
     }
 }

@@ -1,5 +1,7 @@
 package org.fredrikJ.integration;
 
+import org.fredrikJ.model.ItemList;
+
 /**
  * Represents the database containing customers and their discounts.
  */
@@ -11,25 +13,24 @@ public class DiscountCatalog {
     }
 
     /**
-     * Omitted in seminar 3.
      * Handle discount requests
      *
-     * @param customerId a string representing a customer.
-     * @return Returns discount amount to specified customer.
+     * @param customer representing the customer.
+     * @param items    items inside the itemlist.
+     * @return Returns the discount as a string.
      */
-    public double getDiscountByCustomerId(String customerId) {
-        return 0;
+    public String getDiscountByCustomerId(Customer customer, ItemList items) {
+        return customer.getDiscountsTextRepresentation(items);
     }
 
     /**
-     * Omitted in seminar 3.
-     * Validates discount request
+     * Applies discount on the sale based on customer id.
      *
-     * @param customerId a string representing a customer.
-     * @return true or false considering if the customer is eligible for discount.
+     * @param items    items inside the itemlist.
+     * @param customer representing the customer.
      */
-    public boolean checkDiscountByCustomerId(String customerId) {
-        return false;
+    public void applyDiscountByCustomerId(Customer customer, ItemList items) {
+        customer.applyDiscount(items);
     }
 
 }
