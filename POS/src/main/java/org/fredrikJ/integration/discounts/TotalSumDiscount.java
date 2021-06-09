@@ -6,13 +6,14 @@ import org.fredrikJ.model.ItemList;
  * Represent the interface Discount
  */
 public class TotalSumDiscount implements Discount {
+    ItemList items = ItemList.getInstance();
     double sumToReach;
     double discountAmount;
 
     /**
      * Constructs totalSumDiscount.
      *
-     * @param sumToReach    The required amount needed to take part of the discount.
+     * @param sumToReach     The required amount needed to take part of the discount.
      * @param discountAmount is the amount of SEK to be discounted.
      */
     public TotalSumDiscount(double sumToReach, double discountAmount) {
@@ -23,34 +24,32 @@ public class TotalSumDiscount implements Discount {
     /**
      * Applies the discount if available to price objects in ItemList.
      *
-     * @param items represents items in the ItemList .
      */
     @Override
-    public void applyDiscount(ItemList items) {
-        if (isDiscountValid(items))
-            items.setDiscount(getVatPercentage(items));
+    public void applyDiscount() {
+        if (isDiscountValid())
+            items.setDiscount(getVatPercentage());
     }
 
     /**
      * Represents the the discount in text form.
      *
-     * @param items contains itemTypes that will define witch if the discount is available.
      * @return a string representation of the particular discount.
      */
     @Override
-    public String textRepresentation(ItemList items) {
+    public String textRepresentation() {
         String s = null;
-        if (isDiscountValid(items)) {
+        if (isDiscountValid()) {
             s = String.format("Buy for %.0f kr and get %.0f kr off.", sumToReach, discountAmount);
         }
         return s;
     }
 
-    private boolean isDiscountValid(ItemList items) {
+    private boolean isDiscountValid() {
         return items.getPrice().getPricePreDiscount() > sumToReach;
     }
 
-    private double getVatPercentage(ItemList items) {
+    private double getVatPercentage() {
         return (discountAmount / items.getPrice().getPricePreDiscount()) * 100;
     }
 }

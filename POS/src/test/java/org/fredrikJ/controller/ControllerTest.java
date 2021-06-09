@@ -47,12 +47,13 @@ public class ControllerTest {
             Assert.assertFalse(sale.getItemList().isItemTypeInList(invalidItemId));
         }
         catch (InvalidItemIdException | DatabaseFailureException exception){
-           Assert.assertEquals("Invalid item identifier. Item identifier can not be found in database.", exception.getMessage());
+           Assert.assertEquals("The ItemId \"7350042710101\" is invalid, please check spelling and item ID.", exception.getMessage());
         }
     }
 
     @Test
     public void getRunningTotal() {
+        Assert.assertEquals(0, controller.getRunningTotal(),0.0001);
         try{
             sale.enterItem("7340888803525", 2);
             sale.enterItem("7340888803525", 1);

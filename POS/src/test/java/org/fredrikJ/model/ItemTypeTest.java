@@ -22,7 +22,7 @@ public class ItemTypeTest {
     @Test
     public void addAndSubbToQuantity() {
         //Test add, 12 + 2 = 14
-        item.addAndSubToQuantity(2);
+        Assert.assertTrue(item.addAndSubToQuantity(2));
         Assert.assertEquals(14, item.getQuantity());
 
         Assert.assertEquals(11888.47654, item.getTotalPrice().getPrice(), 0.0001);
@@ -30,13 +30,15 @@ public class ItemTypeTest {
         Assert.assertEquals(11.442, item.getTotalPrice().getVatPercentage(), 0.0001);
 
         //Test subtraction to much, 14 - 15 = -1, -1 !>= 0, should not change if the subtraction is to big.
-        item.addAndSubToQuantity(-15);
+        Assert.assertFalse(item.addAndSubToQuantity(-15));
         Assert.assertEquals(14, item.getQuantity());
 
-        //Test subtraction, 14 - 14 = 0
-        item.addAndSubToQuantity(-14);
-        Assert.assertEquals(0, item.getQuantity());
+        //Test subtraction, 14 - 14 = 0, 0 <= 0 not edited
+        Assert.assertFalse(item.addAndSubToQuantity(-14));
+        Assert.assertEquals(14, item.getQuantity());
 
+        Assert.assertTrue(item.addAndSubToQuantity(-13));
+        Assert.assertEquals(1, item.getQuantity());
 
     }
 }

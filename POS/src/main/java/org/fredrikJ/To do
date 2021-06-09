@@ -1,0 +1,20 @@
+Things to do:
+Tests.
+Make more self evaluating texts for all classes.
+Make tests for illegal arguments.
+
+MAke inventory catalog a singelton.
+
+
+
+Clear View.
+Add receipt to the view.
+Make a available Discounts list.
+Send Discounts to sale.
+Print discounts in view.
+
+Observer.
+Make a observed interface.
+Send Payment to observer.
+
+

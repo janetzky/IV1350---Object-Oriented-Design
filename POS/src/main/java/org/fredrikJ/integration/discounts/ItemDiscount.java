@@ -6,6 +6,7 @@ import org.fredrikJ.model.ItemList;
  * A discount implementation.
  */
 public class ItemDiscount implements Discount {
+    ItemList items = ItemList.getInstance();
     String itemId;
     double percentage;
 
@@ -26,8 +27,8 @@ public class ItemDiscount implements Discount {
      * @param items represents items in the ItemList .
      */
     @Override
-    public void applyDiscount(ItemList items) {
-        if (isDiscountValid(items)) {
+    public void applyDiscount() {
+        if (isDiscountValid()) {
             items.getItemTypeById(this.itemId).getTotalPrice().setDiscountByPercentage(this.percentage);
         }
     }
@@ -39,16 +40,16 @@ public class ItemDiscount implements Discount {
      * @return a string representation of the particular discount.
      */
     @Override
-    public String textRepresentation(ItemList items) {
+    public String textRepresentation() {
         String s = null;
-        if (isDiscountValid(items)) {
+        if (isDiscountValid()) {
             s = String.format("%.0f %% discount on %20s:    -%.2f kr.", percentage, items.getItemTypeById(itemId).getDescription(),
                     (items.getItemTypeById(itemId).getTotalPrice().getPrice() * percentage / 100));
         }
         return s;
     }
 
-    private boolean isDiscountValid(ItemList items) {
+    private boolean isDiscountValid() {
         return items.isItemTypeInList(itemId);
     }
 }

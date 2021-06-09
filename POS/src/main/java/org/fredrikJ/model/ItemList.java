@@ -15,10 +15,21 @@ public class ItemList {
     /**
      * Constructor
      */
-    public ItemList() {
+    private ItemList() {
         price = new Price();
     }
+    public static ItemList getInstance() {
+        return ItemListHolder.instance;
+    }
 
+    private static class ItemListHolder {
+        private static ItemList instance = new ItemList();
+    }
+    
+    public void reset(){
+        items = new ArrayList<ItemType>();
+        price = new Price();
+    }
     /**
      * Adds a new itemType to the list.
      *
@@ -43,7 +54,6 @@ public class ItemList {
                     break;
                 }
     }
-
 
     /**
      * Checks if the ItemType is in list.
@@ -130,3 +140,4 @@ public class ItemList {
         this.price.setDiscountByPercentage(discount);
     }
 }
+

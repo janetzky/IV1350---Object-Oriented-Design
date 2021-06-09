@@ -20,4 +20,5 @@ public class Register {
     public void deposit(Payment payment) {
         System.out.println(String.format("Deposited %10.2f to Register", payment.getAmountToPay()));
     }
+
 }

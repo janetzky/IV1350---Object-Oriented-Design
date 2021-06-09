@@ -8,7 +8,7 @@ import org.fredrikJ.integration.InventoryCatalog;
 public class Sale {
 
     private final InventoryCatalog inventoryCatalog = new InventoryCatalog();
-    private ItemList itemList = new ItemList();
+    private ItemList itemList = ItemList.getInstance();
 
     /**
      * Creates a new instance, representing a sale.
@@ -28,7 +28,13 @@ public class Sale {
         if (isItemInList)
             itemList.addItemByQuantity(itemId, quantity);
         else {
-            itemList.addItemType(inventoryCatalog.getItemById(itemId, quantity));
+            try{
+                itemList.addItemType(inventoryCatalog.getItemById(itemId, quantity));
+            }catch (InvalidItemIdException e){
+                throw new InvalidItemIdException("The ItemId \"" + itemId + "\" is invalid, please check spelling and item ID." );
+            } catch (DatabaseFailureException e){
+                throw new DatabaseFailureException("The database can not be accessed. Try to reboot system.");
+            }
         }
         return isItemInList;
     }

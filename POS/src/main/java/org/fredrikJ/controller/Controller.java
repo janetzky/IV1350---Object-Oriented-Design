@@ -10,7 +10,7 @@ import java.util.List;
  * Represents the controller
  */
 public class Controller {
-    private final List<SaleObserver> saleObserverList = new ArrayList<SaleObserver>();
+    private final List<ControllerPaymentObserver> controllerPaymentObserverList = new ArrayList<ControllerPaymentObserver>();
     private final Register register;
     private final ExternalAccountingSystem externalAccountingSystem;
     private final ExternalInventorySystem externalInventorySystem;
@@ -44,6 +44,7 @@ public class Controller {
      * Starts a new sale.
      */
     public void startNewSale() {
+        ItemList.getInstance().reset();
         this.sale = new Sale();
     }
 
@@ -100,8 +101,8 @@ public class Controller {
      * @param saleTotal will be sent to be part of the totalRevenue
      */
     public void notifyObservers(double saleTotal) {
-        for (SaleObserver saleObserver : saleObserverList) {
-            saleObserver.updateTotalRevenue(saleTotal);
+        for (ControllerPaymentObserver controllerPaymentObserver : controllerPaymentObserverList) {
+            controllerPaymentObserver.newSaleWasMade(saleTotal);
         }
     }
 
@@ -110,8 +111,8 @@ public class Controller {
      *
      * @param saleobserver representing a saleobserver
      */
-    public void addSaleObserver(SaleObserver saleobserver) {
-        this.saleObserverList.add(saleobserver);
+    public void addSaleObserver(ControllerPaymentObserver saleobserver) {
+        this.controllerPaymentObserverList.add(saleobserver);
     }
 
     /**
@@ -120,7 +121,7 @@ public class Controller {
      * @param customerId a string representing a customer.
      */
     public String discountRequest(String customerId) {
-        return discountCatalog.getDiscountByCustomerId(customerCatalog.getCustomerById(customerId), sale.getItemList());
+        return discountCatalog.getDiscountByCustomerId(customerCatalog.getCustomerById(customerId));
     }
 
     /**
@@ -129,7 +130,7 @@ public class Controller {
      * @param customerId a string representing a customer.
      */
     public void applyDiscount(String customerId) {
-        discountCatalog.applyDiscountByCustomerId(customerCatalog.getCustomerById(customerId), sale.getItemList());
+        discountCatalog.applyDiscountByCustomer(customerCatalog.getCustomerById(customerId));
     }
 
 

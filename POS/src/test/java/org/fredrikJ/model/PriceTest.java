@@ -9,11 +9,10 @@ public class PriceTest {
     public Price price;
     double netto = 35.99;
     double vat = 1.124;
+
     @Before
     public void setUp() {
-
         price = new Price(netto, 12.4);
-
     }
 
     @After
@@ -24,32 +23,32 @@ public class PriceTest {
     @Test
     public void setNettoAndVatPercentage() {
         price.setNettoAndVatPercentage(46.662, 8.99);
-        Assert.assertEquals(46.662, price.getNetto() , 0.0001);
-        Assert.assertEquals(46.662 * 0.0899, price.getVat() , 0.0001);
-        Assert.assertEquals(8.99, price.getVatPercentage() , 0.0001);
+        Assert.assertEquals(46.662, price.getNetto(), 0.0001);
+        Assert.assertEquals(46.662 * 0.0899, price.getVat(), 0.0001);
+        Assert.assertEquals(8.99, price.getVatPercentage(), 0.0001);
     }
 
     @Test
     public void setPriceAndVat() {
         price.setPriceAndVat(159.872, 56.22);
-        Assert.assertEquals(159.872 - 56.22, price.getNetto() , 0.0001);
-        Assert.assertEquals(56.22, price.getVat() , 0.0001);
+        Assert.assertEquals(159.872 - 56.22, price.getNetto(), 0.0001);
+        Assert.assertEquals(56.22, price.getVat(), 0.0001);
         //Assert.assertEquals(0, price.getVatPercentage() , 0.0001);
     }
 
     @Test
     public void getPrice() {
-        Assert.assertEquals(netto * 1.124, price.getPrice(),0.0001);
+        Assert.assertEquals(netto * 1.124, price.getPrice(), 0.0001);
     }
 
     @Test
     public void getNetto() {
-        Assert.assertEquals(netto, price.getNetto() ,0.0001);
+        Assert.assertEquals(netto, price.getNetto(), 0.0001);
     }
 
     @Test
     public void getVatPercentage() {
-        Assert.assertEquals(12.4, price.getVatPercentage(),0.0001);
+        Assert.assertEquals(12.4, price.getVatPercentage(), 0.0001);
     }
 
     @Test

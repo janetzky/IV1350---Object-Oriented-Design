@@ -31,7 +31,6 @@ public class InventoryCatalogTest {
             Assert.assertEquals(25, inventoryCatalog.getItemById("7392257101382", 1).getPrice().getVatPercentage(), 0.00001);        // int 25% moms
             Assert.assertEquals("Mycket god Sur lakrits", inventoryCatalog.getItemById("7392257101337", 1).getDescription());   // String Beskrivning
             Assert.assertEquals(5, inventoryCatalog.getItemById("7070866022716", 5).getQuantity());                                //int antal
-            //inventoryCatalog.getItemById("ysagf", 5);
         } catch (DatabaseFailureException | InvalidItemIdException exception) {
             fail("Failed due to exception: " + exception.getMessage());
         }

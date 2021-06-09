@@ -5,7 +5,6 @@ import org.fredrikJ.integration.discounts.Discount;
 import org.fredrikJ.integration.discounts.ItemDiscount;
 import org.fredrikJ.integration.discounts.QuantityDiscount;
 import org.fredrikJ.integration.discounts.TotalSumDiscount;
-import org.fredrikJ.model.ItemList;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -15,7 +14,7 @@ import java.util.List;
  * Represents a customer.
  */
 public class Customer {
-
+    
     private final String customerId;
     private final String name;
     List<Discount> discountList = new ArrayList();
@@ -67,16 +66,15 @@ public class Customer {
     /**
      * Returns a string representing the specific discounts that are available.
      *
-     * @param items Items inside the ItemList.
      * @return returns a string of discounts.
      */
-    public String getDiscountsTextRepresentation(ItemList items) {
+    public String getDiscountsTextRepresentation() {
         StringBuilder discounts = new StringBuilder();
         discounts.append(this.name + ", You have some available discounts: \n");
         for (Discount discount : discountList) {
-            String s = discount.textRepresentation(items);
+            String s = discount.textRepresentation();
             if (s != null)
-                discounts.append(discount.textRepresentation(items)).append("\n");
+                discounts.append(discount.textRepresentation()).append("\n");
         }
         if (discounts.length() - this.name.length() < 40)
             return "Sorry " + this.name + ", There are no discounts available.";
@@ -86,11 +84,10 @@ public class Customer {
     /**
      * Applies available discounts to price objects in ItemList.
      *
-     * @param items representing the items in the ItemList.
      */
-    public void applyDiscount(ItemList items) {
+    public void applyDiscount() {
         for (Discount discount : discountList) {
-            discount.applyDiscount(items);
+            discount.applyDiscount();
         }
     }
 

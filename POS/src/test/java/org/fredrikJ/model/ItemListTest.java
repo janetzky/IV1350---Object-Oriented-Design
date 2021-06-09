@@ -11,7 +11,7 @@ public class ItemListTest {
 
     @Before
     public void setUp() {
-        this.itemList = new ItemList();
+        this.itemList = ItemList.getInstance();
         ItemType item = new ItemType("331dfsef", 13.37, 12, "Delikat kladdkaka", 42);
         this.itemList.addItemType(item);
     }
@@ -21,34 +21,47 @@ public class ItemListTest {
         this.itemList = null;
     }
 
-    @Test //add to existing itemType, is only
+    @Test
     public void addItemByQuantity() {
         this.itemList.addItemByQuantity("331dfsef",3);
         Assert.assertEquals(45, this.itemList.getItemTypeById("331dfsef").getQuantity() );
+        this.itemList.addItemByQuantity("331dfsef",-44);
+        Assert.assertEquals(1, this.itemList.getItemTypeById("331dfsef").getQuantity() );
+        this.itemList.addItemByQuantity("331dfsef",-10);
+        Assert.assertNull(this.itemList.getItemTypeById("331dfsef"));
     }
 
-    @Test // finns
+    @Test
     public void addItemType() {
         ItemType item = new ItemType("KOSur83&%#", 5.00, 6, "Dennis hotdog", 1250);
         this.itemList.addItemType(item);
         Assert.assertEquals("KOSur83&%#", this.itemList.getItemTypeById("KOSur83&%#").getItemId());
+        Assert.assertEquals(5, this.itemList.getItemTypeById("KOSur83&%#").getPrice().getNetto(),0.0001);
+        Assert.assertEquals(6, this.itemList.getItemTypeById("KOSur83&%#").getPrice().getVatPercentage(),0.0001);
+        Assert.assertEquals("Dennis hotdog", this.itemList.getItemTypeById("KOSur83&%#").getDescription());
+        Assert.assertEquals(1250, this.itemList.getItemTypeById("KOSur83&%#").getQuantity());
     }
 
-    @Test //finns
+    @Test
     public void isItemTypeInList() {
-        Assert.assertEquals(true, this.itemList.isItemTypeInList("331dfsef"));
+        Assert.assertTrue(this.itemList.isItemTypeInList("331dfsef"));
+        Assert.assertFalse(this.itemList.isItemTypeInList("invalidItemId"));
     }
 
-    @Test // finns
+    @Test
     public void updatePrice() {
         Assert.assertEquals(42 * (13.37 * 1.12), this.itemList.getPrice().getPrice(), 0.00001);
     }
 
-    @Test // finns
+    @Test
     public void setDiscount() {
+        Double percentage = 14.2;
+        this.itemList.setDiscount(percentage);
+        Assert.assertEquals(14.2,this.itemList.getPrice().getDiscountPercentage(), 0.0001);
+        Assert.assertEquals(this.itemList.getPrice().getPricePreDiscount() * 14.2/100,this.itemList.getPrice().getDiscountAmount(), 0.0001);
     }
 
-    @Test // finns
+    @Test
     public void getItemTypeById() {
         addItemType();
     }

@@ -22,5 +22,4 @@ public class ExternalAccountingSystem {
     public void registerPayment(Payment payment, Receipt receipt) {
         System.out.println(String.format("Payment of %10.2f kr registered to external accounting system at %10s the %10s ",payment.getAmountToPay(), payment.getTime(),  payment.getDate() ));
     }
-
 }

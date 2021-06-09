@@ -1,6 +1,7 @@
 package org.fredrikJ.model;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,7 +15,7 @@ public class ReceiptTest {
     @Before
     public void setUp() {
         printer = new Printer();
-        items = new ItemList();
+        items = ItemList.getInstance();
         items.addItemType(new ItemType("Kidu773", 80, 25, "Gröna oliver", 4));
         items.addItemType(new ItemType("Kid233333", 80, 6, "Röda oliver", 2));
         items.addItemByQuantity("Kidu773", 1);
@@ -28,7 +29,11 @@ public class ReceiptTest {
 
     @Test
     public void getReceiptStrings() {
-        receipt = new Receipt(items, new Payment(items.getPrice().getPrice(), 1200));
-        printer.printReceipt(receipt);
+        try {
+            receipt = new Receipt(items, new Payment(items.getPrice().getPrice(), 1200));
+            printer.printReceipt(receipt);
+        }catch (Exception e) {
+            Assert.fail(e.getMessage());
+        }
     }
 }

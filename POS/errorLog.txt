@@ -1,20 +1,759 @@
-maj 19, 2021 7:45:43 EM org.fredrikJ.integration.ErrorLog logInfo
+
+maj 14, 2021 2:25:34 EM org.thor.integration.ErrorLog logInfo
+INFO: Info: Invalid Item Identifier "dsgjs" not found in database.
+maj 14, 2021 2:26:04 EM org.thor.integration.ErrorLog logWarning
+WARNING: Warning: Database connection failure, reboot the system.
+maj 14, 2021 2:26:43 EM org.thor.integration.ErrorLog logInfo
+INFO: Info: Invalid Item Identifier "testfel2" not found in database.
+maj 14, 2021 2:26:47 EM org.thor.integration.ErrorLog logInfo
+INFO: Info: Invalid Item Identifier "testfel4" not found in database.
+maj 14, 2021 2:26:52 EM org.thor.integration.ErrorLog logWarning
+WARNING: Warning: Database connection failure, reboot the system.
+maj 14, 2021 2:41:36 EM org.thor.integration.ErrorLog logInfo
+INFO: Info: Invalid item identifier. Item identifier can not be found in database.
+maj 14, 2021 2:43:27 EM org.thor.integration.ErrorLog logInfo
 INFO: Invalid item identifier. Item identifier can not be found in database.
-maj 19, 2021 7:45:43 EM org.fredrikJ.integration.ErrorLog logWarning
+maj 14, 2021 2:43:27 EM org.thor.integration.ErrorLog logWarning
 WARNING: Database connection failure.
-maj 19, 2021 7:46:00 EM org.fredrikJ.integration.ErrorLog logInfo
+maj 14, 2021 2:44:43 EM org.thor.integration.ErrorLog logInfo
 INFO: Invalid item identifier. Item identifier can not be found in database.
-maj 19, 2021 7:46:00 EM org.fredrikJ.integration.ErrorLog logWarning
+maj 14, 2021 2:44:43 EM org.thor.integration.ErrorLog logWarning
 WARNING: Database connection failure.
-maj 19, 2021 8:15:20 EM org.fredrikJ.integration.ErrorLog logInfo
+maj 14, 2021 2:47:38 EM org.thor.integration.ErrorLog logInfo
 INFO: Invalid item identifier. Item identifier can not be found in database.
-maj 19, 2021 8:15:20 EM org.fredrikJ.integration.ErrorLog logWarning
+maj 14, 2021 2:47:38 EM org.thor.integration.ErrorLog logWarning
 WARNING: Database connection failure.
-maj 19, 2021 8:17:04 EM org.fredrikJ.integration.ErrorLog logInfo
+maj 14, 2021 2:49:40 EM org.thor.integration.ErrorLog logInfo
 INFO: Invalid item identifier. Item identifier can not be found in database.
-maj 19, 2021 8:17:04 EM org.fredrikJ.integration.ErrorLog logWarning
+maj 14, 2021 2:49:40 EM org.thor.integration.ErrorLog logWarning
 WARNING: Database connection failure.
-maj 19, 2021 8:17:18 EM org.fredrikJ.integration.ErrorLog logInfo
+maj 14, 2021 2:52:27 EM org.thor.integration.ErrorLog logInfo
 INFO: Invalid item identifier. Item identifier can not be found in database.
-maj 19, 2021 8:17:19 EM org.fredrikJ.integration.ErrorLog logWarning
+maj 14, 2021 2:52:27 EM org.thor.integration.ErrorLog logWarning
 WARNING: Database connection failure.
+maj 14, 2021 2:56:51 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 14, 2021 2:56:51 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 14, 2021 2:57:14 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 14, 2021 2:57:14 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 14, 2021 3:02:28 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 14, 2021 3:02:29 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 14, 2021 3:03:00 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 14, 2021 3:03:00 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 14, 2021 3:18:46 EM org.thor.integration.ErrorLog logInfoString
+INFO: Program started.
+maj 14, 2021 3:18:46 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 14, 2021 3:18:46 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 14, 2021 3:19:21 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 14, 2021 3:19:42 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 14, 2021 3:19:42 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 14, 2021 5:13:35 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 14, 2021 5:13:35 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 14, 2021 5:13:35 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 14, 2021 5:20:52 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 14, 2021 5:20:52 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 14, 2021 5:20:52 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 14, 2021 5:21:19 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 12:09:05 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 12:09:06 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 12:09:06 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 12:13:29 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 12:13:29 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 12:13:29 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 12:15:51 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 12:15:51 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 12:15:51 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 12:20:22 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 12:20:22 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 12:20:22 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 12:20:48 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 12:20:48 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 12:20:48 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 12:21:28 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 12:21:28 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 12:21:28 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 4:42:43 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 4:42:43 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 4:42:43 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 4:46:40 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 4:46:40 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 4:46:40 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 4:52:06 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 4:52:06 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 4:52:06 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 4:56:12 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 4:56:12 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 4:56:12 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 4:56:21 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 4:58:34 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 4:58:34 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 4:58:34 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:13:32 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 5:13:32 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:13:32 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:15:41 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 5:15:41 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:15:41 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:16:51 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 5:16:51 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:16:51 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:17:38 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 5:17:38 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:17:38 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:19:53 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 5:19:53 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:19:54 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:21:19 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 5:21:19 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:21:19 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:21:25 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:21:25 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:23:28 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 5:23:28 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:23:28 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:23:35 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:23:35 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:24:09 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:24:09 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:38:43 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 5:38:43 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:38:43 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:38:49 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:38:49 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:41:13 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 5:41:13 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:41:13 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:41:21 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:41:21 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:41:57 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:41:57 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:48:08 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 5:48:08 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:48:08 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:48:21 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 5:48:21 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:48:21 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:48:29 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:48:29 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 5:50:01 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 5:50:01 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 5:50:01 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 6:02:05 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 6:02:05 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 6:02:05 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 6:02:13 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 6:02:13 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 6:06:15 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 6:06:15 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 6:06:15 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 6:06:26 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 6:06:26 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 6:09:24 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 6:09:24 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 6:09:52 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 6:09:52 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 6:09:52 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 6:09:58 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 6:09:58 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 6:10:21 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 6:10:21 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 6:14:15 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 6:14:15 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 6:14:15 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 6:14:21 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 6:14:21 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 6:15:36 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 6:15:36 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 6:17:50 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 6:17:50 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 6:17:50 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 6:17:58 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 6:17:58 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 6:18:21 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 6:18:21 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 6:20:58 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 17, 2021 6:20:58 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 6:20:58 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 6:21:08 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 6:21:08 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 17, 2021 6:21:40 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 17, 2021 6:21:40 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 18, 2021 6:50:29 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 18, 2021 6:50:29 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 18, 2021 6:50:29 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 18, 2021 6:52:26 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 18, 2021 6:52:26 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 18, 2021 6:52:26 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 18, 2021 6:52:34 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 18, 2021 6:53:19 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 18, 2021 6:53:19 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 18, 2021 6:53:19 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 18, 2021 6:53:36 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 18, 2021 6:53:36 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 18, 2021 6:57:32 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 18, 2021 6:57:32 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 18, 2021 6:57:32 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 18, 2021 6:59:01 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 18, 2021 6:59:01 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 18, 2021 7:57:29 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 18, 2021 7:57:29 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 18, 2021 7:58:53 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 18, 2021 7:58:53 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 18, 2021 8:02:24 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 18, 2021 8:02:24 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 18, 2021 8:02:53 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 18, 2021 8:02:53 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 18, 2021 8:03:05 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 18, 2021 8:03:05 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 18, 2021 8:04:37 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 18, 2021 8:04:38 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 18, 2021 8:05:07 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 18, 2021 8:05:07 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 18, 2021 8:05:27 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 18, 2021 8:05:27 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 18, 2021 8:12:55 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 18, 2021 8:12:55 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:20:39 FM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 19, 2021 11:20:39 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:20:39 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:21:18 FM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 19, 2021 11:21:18 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:21:18 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:21:18 FM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 19, 2021 11:21:18 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:21:18 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:22:40 FM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 19, 2021 11:22:40 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:22:40 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:22:40 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:22:40 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:24:32 FM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 19, 2021 11:24:32 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:24:32 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:24:32 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:24:32 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:29:55 FM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 19, 2021 11:29:55 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:29:55 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:29:55 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:29:55 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:30:13 FM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 19, 2021 11:30:13 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:30:13 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:30:13 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:30:13 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:31:59 FM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 19, 2021 11:31:59 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:31:59 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:31:59 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:31:59 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:36:52 FM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 19, 2021 11:36:52 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:36:52 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:36:52 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:36:52 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:37:52 FM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 19, 2021 11:37:52 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:37:52 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:37:52 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:37:52 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:39:03 FM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 19, 2021 11:39:03 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:39:03 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 11:39:03 FM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 11:39:03 FM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 8:45:53 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 19, 2021 8:45:53 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 8:45:53 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 8:45:53 EM org.thor.integration.ErrorLog logInfo
+INFO: Invalid item identifier. Item identifier can not be found in database.
+maj 19, 2021 8:45:53 EM org.thor.integration.ErrorLog logWarning
+WARNING: Database connection failure.
+maj 19, 2021 10:06:17 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 19, 2021 10:06:17 EM org.thor.integration.ErrorLog logInfo
+INFO: [33mThe ItemId "WrongItemId" is invalid, please check spelling and item ID.[0m
+maj 19, 2021 10:06:17 EM org.thor.integration.ErrorLog logWarning
+WARNING: [33mThe database can not be accessed. Try to reboot system.[0m
+maj 19, 2021 10:06:17 EM org.thor.integration.ErrorLog logInfo
+INFO: [33mThe ItemId "WrongItemId" is invalid, please check spelling and item ID.[0m
+maj 19, 2021 10:06:17 EM org.thor.integration.ErrorLog logWarning
+WARNING: [33mThe database can not be accessed. Try to reboot system.[0m
+maj 19, 2021 10:07:51 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 19, 2021 10:07:51 EM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+maj 19, 2021 10:07:51 EM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+maj 19, 2021 10:07:51 EM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+maj 19, 2021 10:07:51 EM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+maj 20, 2021 12:32:39 FM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 20, 2021 12:32:39 FM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+maj 20, 2021 12:32:39 FM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+maj 20, 2021 12:32:39 FM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+maj 20, 2021 12:32:39 FM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+maj 20, 2021 12:33:24 FM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 20, 2021 12:33:24 FM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+maj 20, 2021 12:33:24 FM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+maj 20, 2021 12:33:24 FM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+maj 20, 2021 12:33:24 FM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+maj 20, 2021 12:33:32 FM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+maj 20, 2021 12:33:33 FM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+maj 20, 2021 12:33:33 FM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+maj 20, 2021 12:33:33 FM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+maj 20, 2021 12:33:33 FM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+juni 08, 2021 10:35:40 FM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+juni 08, 2021 10:35:41 FM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+juni 08, 2021 10:35:41 FM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+juni 08, 2021 10:35:41 FM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+juni 08, 2021 10:35:41 FM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+juni 08, 2021 10:41:36 FM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+juni 08, 2021 10:41:36 FM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+juni 08, 2021 10:41:36 FM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+juni 08, 2021 10:41:36 FM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+juni 08, 2021 10:41:36 FM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+juni 08, 2021 10:56:41 FM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+juni 08, 2021 10:56:41 FM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+juni 08, 2021 10:56:41 FM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+juni 08, 2021 10:56:41 FM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+juni 08, 2021 10:56:41 FM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+juni 09, 2021 12:20:17 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+juni 09, 2021 12:20:17 EM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+juni 09, 2021 12:20:17 EM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+juni 09, 2021 12:22:19 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+juni 09, 2021 12:22:19 EM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+juni 09, 2021 12:22:19 EM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+juni 09, 2021 12:22:19 EM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+juni 09, 2021 12:22:19 EM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+juni 09, 2021 12:23:45 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+juni 09, 2021 12:23:45 EM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+juni 09, 2021 12:23:45 EM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+juni 09, 2021 12:23:45 EM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+juni 09, 2021 12:23:45 EM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+juni 09, 2021 12:27:00 EM org.thor.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+juni 09, 2021 12:27:00 EM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+juni 09, 2021 12:27:00 EM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+juni 09, 2021 12:27:00 EM org.thor.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+juni 09, 2021 12:27:00 EM org.thor.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+juni 09, 2021 5:40:12 EM org.fredrikJ.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+juni 09, 2021 5:40:12 EM org.fredrikJ.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+juni 09, 2021 5:40:12 EM org.fredrikJ.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+juni 09, 2021 5:40:12 EM org.fredrikJ.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+juni 09, 2021 5:40:12 EM org.fredrikJ.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+juni 09, 2021 5:46:03 EM org.fredrikJ.integration.ErrorLog logInfoString
+INFO: 
+
+Program started.
+juni 09, 2021 5:46:03 EM org.fredrikJ.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+juni 09, 2021 5:46:03 EM org.fredrikJ.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.
+juni 09, 2021 5:46:03 EM org.fredrikJ.integration.ErrorLog logInfo
+INFO: The ItemId "WrongItemId" is invalid, please check spelling and item ID.
+juni 09, 2021 5:46:03 EM org.fredrikJ.integration.ErrorLog logWarning
+WARNING: The database can not be accessed. Try to reboot system.

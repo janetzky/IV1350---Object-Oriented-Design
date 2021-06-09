@@ -33,7 +33,7 @@ public class ErrorLog {
         try {
             fileHandler = new FileHandler(filename, true);
         } catch (IOException e) {
-            System.out.println("File Handler not working.");
+            System.out.println("File handler was not created.");
         }
         logger = Logger.getLogger("test");
         logger.addHandler(fileHandler);

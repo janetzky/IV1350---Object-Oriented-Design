@@ -1,6 +1,6 @@
 package org.fredrikJ.integration;
 
-import org.fredrikJ.model.SaleObserver;
+import org.fredrikJ.model.TotalRevenueTemplate;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -10,35 +10,46 @@ import java.util.Date;
 /**
  * An implementation of SaleObserver that will log to a text file.
  */
-public class TotalRevenueFileOutput implements SaleObserver {
+public class TotalRevenueFileOutput extends TotalRevenueTemplate {
     private double totalRevenue = 0;
     private PrintWriter revenueWriter;
 
     /**
-     * Constructor of TotalRevenueFileOutput.
+     * A method calculating the total revenue while the program been active.
+     * @param priceOfTheSaleThatWasJustMade income from the last sale.
      */
-    public TotalRevenueFileOutput() {
+    @Override
+    protected void calculateTotalIncome(double priceOfTheSaleThatWasJustMade) {
+        totalRevenue += priceOfTheSaleThatWasJustMade;
+    }
+
+    /**
+     * Method that print the total revenue for all the sales.
+     * @throws Exception that issues the problem if the filewriter and revenuewriter could not be made.
+     */
+    @Override
+    protected void doShowTotalIncome() throws Exception {
         try {
             FileWriter file = new FileWriter("RevenueLog.txt");
             revenueWriter = new PrintWriter(file, true);
         } catch (IOException e) {
-            System.err.println("File writer could not be made");
+            throw new IOException("File writer could not be made");
         }
+        revenueWriter.println(outputText());
     }
 
     /**
-     * Updates the total revenue and prints to the text file when observer is called.
-     *
-     * @param saleTotal the total of a specific sale.
+     * Handles the errors encountered when presenting total income.
+     * @param e get exceptions message
      */
     @Override
-    public void updateTotalRevenue(double saleTotal) {
-        totalRevenue += saleTotal;
-        revenueWriter.println(outputText(saleTotal));
+    protected void handleErrors(Exception e) {
+        System.err.println(e.getMessage());
     }
 
-    private String outputText(double saleTotal) {
+    private String outputText() {
         Date date = new Date();
-        return String.format("%10s: New Sale recorded: %10.2f kr   Total revenue is:  %10.2f kr ", date, saleTotal, totalRevenue);
+        return String.format("%10s: New Sale recorded. Total revenue is:  %10.2f kr "
+                , date, totalRevenue);
     }
 }

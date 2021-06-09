@@ -24,13 +24,22 @@ public class SaleTest {
     @Test
     public void enterItem() {
         try {
-            Assert.assertEquals(true,sale.enterItem("7350042710102", 3));
-            Assert.assertEquals(false,sale.enterItem("7392257101382", 12));
-            Assert.assertEquals(true,sale.enterItem("7392257101382", 12));
+            Assert.assertTrue( sale.enterItem("7350042710102", 3));
+            Assert.assertFalse(sale.enterItem("7392257101382", 12));
+            Assert.assertTrue( sale.enterItem("7392257101382", 12));
         }catch (Exception e){
-
+            Assert.fail(e.getMessage());
         }
+        try {
+            Assert.assertFalse( sale.enterItem("invalidItemId", 12));
+        }catch (Exception e){
+            Assert.assertTrue(true);
+        }
+        Assert.assertEquals(6,sale.getItemById("7350042710102").getQuantity());
+        Assert.assertEquals(24,sale.getItemById("7392257101382").getQuantity());
 
+        Assert.assertEquals("7392257101382",sale.getItemById("7392257101382").getItemId());
+        Assert.assertEquals("7350042710102",sale.getItemById("7350042710102").getItemId());
     }
 
     @Test
@@ -40,13 +49,28 @@ public class SaleTest {
 
     @Test
     public void endSale() {
-        Printer printer = new Printer();
-        //sale.enterItem("7350042710102", 3);
-        receipt = sale.endSale(new Payment(sale.getRunningTotal(), 120));
-        printer.printReceipt(receipt);
+        try {
+            Printer printer = new Printer();
+            receipt = sale.endSale(new Payment(sale.getRunningTotal(), 120));
+            printer.printReceipt(receipt);
+        }catch(Exception e){
+            Assert.fail(e.getMessage());
+        }
     }
 
     @Test
-    public void addDiscount() {
+    public void getItemList(){
+        Assert.assertNotNull(sale.getItemList());
+        Assert.assertEquals(sale.getRunningTotal(), sale.getItemList().getPrice().getPrice(),0.0001);
+    }
+
+    @Test
+    public void getItemById(){
+        Assert.assertNotNull(sale.getItemById("7350042710102"));
+    }
+
+    @Test
+    public void getScannedItems(){
+        Assert.assertNotNull(sale.getScannedItems());
     }
 }

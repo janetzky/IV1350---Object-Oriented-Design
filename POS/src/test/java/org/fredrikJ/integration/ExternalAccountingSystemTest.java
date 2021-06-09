@@ -1,6 +1,7 @@
 package org.fredrikJ.integration;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.fredrikJ.model.*;
@@ -16,12 +17,11 @@ public class ExternalAccountingSystemTest {
         externalAccountingSystem = new ExternalAccountingSystem();
         payment = new Payment(500.72, 700);
 
-        items = new ItemList();
+        items = ItemList.getInstance();
         items.addItemType(new ItemType("Kidu773", 88.55, 35, "Gröna oliver", 4));
         items.addItemType(new ItemType("Kid233333", 88.55, 33, "Röda oliver", 2));
         items.addItemByQuantity("Kidu773", 1);
         items.addItemByQuantity("Kid233333", 5);
-
     }
 
     @After
@@ -34,6 +34,11 @@ public class ExternalAccountingSystemTest {
     @Test
     public void registerPayment() {
         receipt = new Receipt(items, new Payment(items.getPrice().getPrice(), 500));
-        externalAccountingSystem.registerPayment(payment, receipt);
+        try{
+            externalAccountingSystem.registerPayment(payment, receipt);
+        }catch(Exception e){
+            Assert.fail(e.getMessage());
+        }
+
     }
 }

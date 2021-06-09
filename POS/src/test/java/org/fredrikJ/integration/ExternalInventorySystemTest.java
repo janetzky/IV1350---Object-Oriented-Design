@@ -1,6 +1,7 @@
 package org.fredrikJ.integration;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.fredrikJ.model.Sale;
@@ -11,7 +12,6 @@ public class ExternalInventorySystemTest {
     @Before
     public void setUp() {
         externalInventorySystem = new ExternalInventorySystem();
-     
     }
 
     @After
@@ -21,6 +21,10 @@ public class ExternalInventorySystemTest {
 
     @Test
     public void registerSale() {
-         externalInventorySystem.registerSale(new Sale() );
+        try{
+            externalInventorySystem.registerSale(new Sale());
+        }catch(Exception e){
+            Assert.fail(e.getMessage());
+        }
     }
 }

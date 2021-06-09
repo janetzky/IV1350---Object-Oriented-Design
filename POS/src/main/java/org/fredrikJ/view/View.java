@@ -40,13 +40,16 @@ public class View {
     }
 
     public void view() {
+        errorlog.logInfoString("\n\nProgram started.");
+        controller.addSaleObserver(totalRevenueFileOutput);
+        controller.addSaleObserver(totalRevenueView);
+
+        saleExample();
         saleExample();
     }
 
     private void saleExample(){
         controller.startNewSale();
-        controller.addSaleObserver(totalRevenueFileOutput);
-        controller.addSaleObserver(totalRevenueView);
         System.out.println("New Sale Started\n");
 
         enterHardCodedItems();
@@ -61,9 +64,11 @@ public class View {
 
         System.out.printf("%-25s %10.2f kr %n", "To Pay:", controller.getRunningTotal());
 
-        controller.pay(controller.getRunningTotal(), 2500);
+        double amountPaid = 2500;
+        System.out.printf("%-25s %10.2f kr %n", "Customer pays:", amountPaid );
+        controller.pay(controller.getRunningTotal(), amountPaid);
 
-        System.out.println("Sale ended\n");
+        System.out.println("Sale ended\n\n");
     }
 
     private void manualView(){
@@ -100,6 +105,7 @@ public class View {
     }
 
     private void enterHardCodedItems() {
+        enterItem("A1", 3);
         enterItem("A2", 4);
         enterItem("A5", 3);
         enterItem("WrongItemId", 883);
@@ -115,10 +121,10 @@ public class View {
             controller.enterItem(itemId, quantity);
             System.out.println(controller.getScannedItems());
         } catch (InvalidItemIdException exception) {
-            System.out.println("\u001B[33m" + "The ItemId \"" + itemId + "\" is invalid, please check spelling and item ID." + "\u001B[0m");
+            System.out.println("\u001B[33m" + exception.getMessage() + "\u001B[0m");
             errorlog.logInfo(exception);
         } catch (DatabaseFailureException exception) {
-            System.out.println("\u001B[33m" + "The database can not be accessed. Try to reboot system." + "\u001B[0m");
+            System.out.println("\u001B[33m" + exception.getMessage() + "\u001B[0m");
             errorlog.logWarning(exception);
         }
     }
